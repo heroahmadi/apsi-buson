@@ -1,7 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
-<div class="container">
+<div class="allcontain">
+    <div class="feturedsection">
+        <h1 class="text-center"><span class="bdots">&bullet;</span><span class="carstxt">REGISTER</span>&bullet;</h1>
+    </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">

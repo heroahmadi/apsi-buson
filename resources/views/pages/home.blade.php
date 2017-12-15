@@ -2,13 +2,6 @@
 
 @section('title', 'Selamat Datang')
 
-@section('includes-css')
-	@parent
-
-	<link rel="stylesheet" type="text/css" href="{{ url('style/slider.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ url('style/mystyle.css')}}">
-@endsection
-
 @section('content')
 	<div class="allcontain">
 		<div id="carousel-up" class="carousel slide" data-ride="carousel">
@@ -415,11 +408,4 @@
 		</div>
 	</div>
 
-@endsection
-
-@section('includes-scripts')
-	@parent
-
-	<script type="text/javascript" src="{{ url('source/js/isotope.js')}}"></script>
-	<script type="text/javascript" src="{{ url('source/js/myscript.js')}}"></script> 
 @endsection
