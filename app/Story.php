@@ -8,6 +8,6 @@ class Story extends Model
 {
     public function user()
     {
-    	return $this->hasMany('App\Users');
+    	return $this->belongsTo('App\User');
     }
 }

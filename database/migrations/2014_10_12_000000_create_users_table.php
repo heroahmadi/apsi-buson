@@ -18,8 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('no_hp_pemesan')->unique();
-            $table->string('no_ktp_pemesan')->unique();
+            $table->string('no_hp')->unique();
+            $table->string('no_ktp')->unique();
             $table->rememberToken();
             $table->timestamps();
         });

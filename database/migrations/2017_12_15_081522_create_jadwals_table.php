@@ -18,7 +18,7 @@ class CreateJadwalsTable extends Migration
             $table->integer('bus_id');
             $table->date('hari_berangkat');
             $table->time('waktu_berangkat');
-            $table->integer('terminal_asal');
+            $table->integer('terminal_keberangkatan');
             $table->integer('terminal_tujuan');
             $table->timestamps();
         });
