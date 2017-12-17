@@ -19,9 +19,8 @@ class CreatePemesanansTable extends Migration
             $table->integer('user_id');
             $table->datetime('waktu_pesan');
             $table->integer('status_pemesanan');
-            $table->string('nama_pemesan');
-            $table->string('no_ktp_pemesan');
-            $table->string('no_hp_pemesan');
+            $table->string('nama_penumpang');
+            $table->string('no_ktp_penumpang');
             $table->timestamps();
         });
     }
