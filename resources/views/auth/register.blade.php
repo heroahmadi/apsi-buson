@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title', 'Register')
+
 @section('content')
 <div class="allcontain">
     <div class="feturedsection">
@@ -13,6 +15,20 @@
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
+
+                        <div class="form-group{{ $errors->has('no_ktp') ? ' has-error' : '' }}">
+                            <label for="no_ktp" class="col-md-4 control-label">No. KTP</label>
+
+                            <div class="col-md-6">
+                                <input id="no_ktp" type="text" class="form-control" name="no_ktp" value="{{ old('no_ktp') }}" required autofocus>
+
+                                @if ($errors->has('no_ktp'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('no_ktp') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Name</label>
@@ -37,6 +53,20 @@
                                 @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('no_hp') ? ' has-error' : '' }}">
+                            <label for="no_hp" class="col-md-4 control-label">No. HP</label>
+
+                            <div class="col-md-6">
+                                <input id="no_hp" type="text" class="form-control" name="no_hp" value="{{ old('no_hp') }}" required autofocus>
+
+                                @if ($errors->has('no_hp'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('no_hp') }}</strong>
                                     </span>
                                 @endif
                             </div>

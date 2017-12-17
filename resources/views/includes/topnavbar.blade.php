@@ -5,12 +5,21 @@
 		<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 		<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
 	</ul>
+	@if (auth()->check())
 	<ul class="givusacall">
-		<li>Give us a call : +66666666 </li>
+		<li>Halo, {{ auth()->user()->name }} !</li>
+	</ul>
+	<ul class="logreg">
+		<li><a href="/logout">Logout </a> </li>
+	</ul>
+	@else
+	<ul class="givusacall">
+		
 	</ul>
 	<ul class="logreg">
 		<li><a href="/login">Login </a> </li>
 		<li><a href="/register"><span class="register">Register</span></a></li>
+	@endif
 	</ul>
 </div>
 <!-- Navbar Up -->
