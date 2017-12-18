@@ -35,6 +35,20 @@ class PemesananController extends Controller
         return view('pages.list_jadwal', compact('tiket', 'tanggal'));
     }
 
+    public function book()
+    {
+        $pemesanan = new Pemesanan;
+        $pemesanan->jadwal_id = request('idJadwal');
+        $pemesanan->user_id = auth()->user()->id;
+        $pemesanan->waktu_pesan = request('tanggal');
+        $pemesanan->status_pemesanan = 0;
+        $pemesanan->nama_penumpang = request('nama');
+        $pemesanan->no_ktp_penumpang = request('no_ktp');
+        $pemesanan->save();
+
+        return redirect('payment/'.$pemesanan->id);
+    }
+
     public function metodeBayar($id)
     {
     	return view('pages.metode_bayar', compact('id'));
@@ -54,8 +68,9 @@ class PemesananController extends Controller
 
     	$pemesanan = Pemesanan::find($id);
     	$pemesanan->bukti_bayar = $filename;
+        $pemesanan->status_pemesanan = 1;
     	$pemesanan->save();
 
-    	return 'Sukses';
+    	return view('pages.upload_success');
     }
 }

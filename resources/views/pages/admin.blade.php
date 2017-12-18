@@ -34,7 +34,7 @@
                                 @if ($p->status_pemesanan == 0)
                                     <td><button class="btn btn-sm btn-default disabled">Belum Dibayar</button></td>
                                 @elseif ($p->status_pemesanan == 1)
-                                    <td><button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#buktiBayar" id="buktiBayarButton" value="{{ $p->id }}">Konfirmasi</button></td>
+                                    <td><button class="btn btn-sm btn-primary buktiBayarButton" data-toggle="modal" data-target="#buktiBayar" value="{{ $p->id }}">Konfirmasi</button></td>
                                 @elseif ($p->status_pemesanan == 2)
                                     <td><button class="btn btn-sm btn-primary disabled">Telah Dibayar</button></td>
                                 @endif
@@ -74,7 +74,7 @@
     @parent
 
     <script>
-        $("#buktiBayarButton").click(function() {
+        $(".buktiBayarButton").click(function() {
             $("#id_to_confirm").val($(this).val());
             $.ajax({
                 type: 'post',

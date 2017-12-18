@@ -30,6 +30,7 @@ Route::get('/statistic', 'StatisticController@index');
 
 Route::get('/pesan', 'PemesananController@index');
 Route::post('/pesan/cari_tiket', 'PemesananController@cariTiket');
+Route::post('/pesan/book', 'PemesananController@book');
 
 Route::get('/datapenumpang',function(){
 	return view('pages.datapenumpang');

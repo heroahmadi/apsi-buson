@@ -20,6 +20,7 @@ class CreateJadwalsTable extends Migration
             $table->time('waktu_berangkat');
             $table->integer('terminal_keberangkatan');
             $table->integer('terminal_tujuan');
+            $table->string('harga');
             $table->timestamps();
         });
     }
