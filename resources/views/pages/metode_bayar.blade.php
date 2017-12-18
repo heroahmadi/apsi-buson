@@ -37,25 +37,25 @@
 
 		<!-- Modal -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-body">
-		        <div class="text-center">
-		        	<h2>Kode Booking :</h2>
-		        	<h1><span class="label label-success">{{ $id }}</span></h1>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="text-center">
+							<h2>Kode Booking :</h2>
+							<h1><span class="label label-success">{{ $id }}</span></h1>
 
-		        	<p>Silahkan melakukan pembayaran sesuai petunjuk pada metode pembayaran yang anda pilih. Lalu upload foto bukti pembayaran anda di bawah ini:</p>
-		        </div>
-				<form action="/upload-bukti-bayar" method="post" enctype="multipart/form-data">
-					{{ csrf_field() }}
-					<input type="file" name="bukti_bayar">
-					<input type="hidden" name="id_pemesanan" value="{{ $id }}">
-					<br>
-					<button type="submit" class="btn btn-primary">Upload</button>
-				</form>
-		      </div>
-		    </div>
-		  </div>
+							<p>Silahkan melakukan pembayaran sesuai petunjuk pada metode pembayaran yang anda pilih. Lalu upload foto bukti pembayaran anda di bawah ini:</p>
+						</div>
+						<form action="/upload-bukti-bayar" method="post" enctype="multipart/form-data">
+							{{ csrf_field() }}
+							<input type="file" name="bukti_bayar">
+							<input type="hidden" name="id_pemesanan" value="{{ $id }}">
+							<br>
+							<button type="submit" class="btn btn-primary">Upload</button>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 @endsection

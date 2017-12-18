@@ -26,6 +26,7 @@
 	@section('includes-scripts')
 		<script type="text/javascript" src="{{ url('source/bootstrap-3.3.6-dist/js/jquery.js')}}"></script>
 		<script type="text/javascript" src="{{ url('source/bootstrap-3.3.6-dist/js/jquery.1.11.js')}}"></script>
+		{{-- <script type="text/javascript" src="{{ url('source/js/jquery.1.11.js')}}"></script> --}}
 		<script type="text/javascript" src="{{ url('source/bootstrap-3.3.6-dist/js/bootstrap.min.js')}}"></script>
 		<script type="text/javascript" src="{{ url('source/js/isotope.js')}}"></script>
     	<script type="text/javascript" src="{{ url('source/js/myscript.js')}}"></script> 

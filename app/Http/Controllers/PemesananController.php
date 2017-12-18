@@ -22,7 +22,7 @@ class PemesananController extends Controller
     	$file = request('bukti_bayar');
 
     	$filename = $id.'.'.$file->getClientOriginalExtension();
-    	$file->move(base_path(). '/public/bukti_bayar/', $filename);
+    	$file->move(base_path(). '/public/image/bukti_bayar/', $filename);
 
     	$pemesanan = Pemesanan::find($id);
     	$pemesanan->bukti_bayar = $filename;

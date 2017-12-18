@@ -22,3 +22,5 @@ Route::get('/payment/{id}', 'PemesananController@metodeBayar');
 Route::post('/upload-bukti-bayar', 'PemesananController@pay');
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/admin/get_bukti_bayar', 'AdminController@getBuktiBayar');
+Route::post('/admin/confirm', 'AdminController@confirm');
