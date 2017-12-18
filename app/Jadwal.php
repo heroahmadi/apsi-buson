@@ -15,4 +15,14 @@ class Jadwal extends Model
     {
     	return $this->hasMany('App\Pemesanan');
     }
+
+    public function berangkat()
+    {
+    	return $this->belongsTo('App\Terminal', 'terminal_keberangkatan');
+    }
+
+    public function tujuan()
+    {
+    	return $this->belongsTo('App\Terminal', 'terminal_tujuan');
+    }
 }
