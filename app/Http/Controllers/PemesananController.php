@@ -7,6 +7,11 @@ use App\Pemesanan;
 
 class PemesananController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function metodeBayar($id)
     {
     	return view('pages.metode_bayar', compact('id'));
