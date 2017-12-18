@@ -52,18 +52,18 @@
 					</form>
 					<ul class="nav navbar-nav navbarborder">
 						<li class="li-category">
-							<a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Category<span class="glyphicon glyphicon-chevron-down downicon"></span></a>
+							<a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Terminal Asal<span class="glyphicon glyphicon-chevron-down downicon"></span></a>
 							<ul class="dropdown-menu" id="mydd">
-								<li><a href="#">Epic</a></li>
-								<li><a href="#">Old</a></li>
-								<li><a href="#">New</a></li>
+								<li><a href="#">Bungurasih</a></li>
+								<li><a href="#">Malang Kota</a></li>
+								<li><a href="#">Bratang</a></li>
 							</ul>
 						</li>
-						<li class="li-minyear"><a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Min Year <span class="glyphicon glyphicon-chevron-down downicon"></span></a>
+						<li class="li-minyear"><a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Terminal Tujuan <span class="glyphicon glyphicon-chevron-down downicon"></span></a>
 							<ul class="dropdown-menu" id="mydd2">
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
+								<li><a href="#">Bungurasih</a></li>
+								<li><a href="#">Malangkota</a></li>
+								<li><a href="#">Bratang</a></li>
 							</ul>
 						</li>
 						<li class="li-maxyear"><a class="btn dropdown-toggle btn-costume"  id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Max Year <span class="glyphicon glyphicon-chevron-down downicon"></span></a>
