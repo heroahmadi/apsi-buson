@@ -32,16 +32,17 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand logo" href="/"><img src="/image/logo1.png" alt="logo"></a>
+			<a class="navbar-brand logo" href="/"><img src="/image/logo.png" alt="logo" width="90%"></a>
 		</div>	 
 	</div>
 	<div class="collapse navbar-collapse" id="upmenu">
 		<ul class="nav navbar-nav" id="navbarontop">
 			<li><a href="/">HOME</a> </li>
+			<li><a href="/pesan">PESAN TIKET</a> </li>
 			<li><a href="/mytrip">DAFTAR PEMESANAN</a> </li>
 			<li><a href="/statistic">STATISTIK</a> </li>
 			<li><a href="/admin">ADMIN</a> </li>
-			<li><a href="/traffic-feed">Traffic Feed</a> </li>
+			<li><a href="/traffic-feed">TRAFFIC FEED</a> </li>
 		</ul>
 	</div>
 </nav>

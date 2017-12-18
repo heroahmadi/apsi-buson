@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', 'HomeController@index');
 
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
@@ -27,6 +25,11 @@ Route::post('/mytrip/get_detail', 'DetailPemesananController@getPesanan');
 
 Route::get('/traffic-feed', 'TrafficFeedController@index');
 Route::post('/traffic-feed/post', 'TrafficFeedController@post');
+
+Route::get('/statistic', 'StatisticController@index');
+
+Route::get('/pesan', 'PemesananController@index');
+Route::post('/pesan/cari_tiket', 'PemesananController@cariTiket');
 
 Route::get('/datapenumpang',function(){
 	return view('pages.datapenumpang');

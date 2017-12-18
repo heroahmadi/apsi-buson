@@ -3,13 +3,36 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 use App\Pemesanan;
+use App\Jadwal;
+use App\Terminal;
 
 class PemesananController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth');
+    }
+
+    public function index()
+    {
+        $terminal = Terminal::all();
+
+        return view('pages.pemesanan', compact('terminal'));
+    }
+
+    public function cariTiket()
+    {
+        $tanggal = request('tanggal');
+        $hari = Carbon::parse($tanggal)->dayOfWeek;
+        $asal = request('asal');
+        $tujuan = request('tujuan');
+        $tanggal = Carbon::parse($tanggal);
+
+        $tiket = Jadwal::where('hari_berangkat', $hari)->where('terminal_keberangkatan', $asal)->where('terminal_tujuan', $tujuan)->get()->sortBy('waktu_berangkat');
+
+        return view('pages.list_jadwal', compact('tiket', 'tanggal'));
     }
 
     public function metodeBayar($id)

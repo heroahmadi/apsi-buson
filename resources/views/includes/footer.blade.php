@@ -1,16 +1,14 @@
 <div class="bottommenu">
 	<div class="bottomlogo">
-	<span class="dotlogo">&bullet;</span><img src="/image/collectionlogo1.png" alt="logo1"><span class="dotlogo">&bullet;;</span>
+	<span class="dotlogo">&bullet;</span><img src="/image/logo.png" alt="logo1"><span class="dotlogo">&bullet;;</span>
 	</div>
 	<ul class="nav nav-tabs bottomlinks">
-		<li role="presentation" ><a href="#/" role="button">ABOUT US</a></li>
-		<li role="presentation"><a href="#/">CATEGORIES</a></li>
-		<li role="presentation"><a href="#/">PREORDERS</a></li>
-		<li role="presentation"><a href="#/">CONTACT US</a></li>
-		<li role="presentation"><a href="#/">RECEIVE OUR NEWSLETTER</a></li>
+		<li role="presentation"><a href="/">HOME</a> </li>
+		<li role="presentation"><a href="/mytrip">DAFTAR PEMESANAN</a> </li>
+		<li role="presentation"><a href="/statistic">STATISTIK</a> </li>
+		<li role="presentation"><a href="/admin">ADMIN</a> </li>
+		<li role="presentation"><a href="/traffic-feed">TRAFFIC FEED</a> </li>
 	</ul>
-	<p>"Lorem ipsum dolor sit amet, consectetur,  sed do eiusmod tempor incididunt <br>
-		eiusmod tempor incididunt </p>
 	 <img src="/image/line.png" alt="line"> <br>
 	 <div class="bottomsocial">
 	 	<a href="#"><i class="fa fa-facebook"></i></a>
