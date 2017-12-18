@@ -37,28 +37,11 @@
 	</div>
 	<div class="collapse navbar-collapse" id="upmenu">
 		<ul class="nav navbar-nav" id="navbarontop">
-			<li class="active"><a href="/">HOME</a> </li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle"	data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span class="caret"></span></a>
-				<ul class="dropdown-menu dropdowncostume">
-					<li><a href="#">Sport</a></li>
-					<li><a href="#">Old</a></li>
-					<li><a href="#">New</a></li>
-				</ul>
-			</li>
-			<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DEALERS <span class="caret"></span></a>
-					<ul class="dropdown-menu dropdowncostume">
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="3">3</a></li>
-					</ul>
-			</li>
-			<li>
-				<a href="contact.html">CONTACT</a>
-
-			</li>
-			<button><span class="postnewcar">POST NEW CAR</span></button>
+			<li><a href="/">HOME</a> </li>
+			<li><a href="/mytrip">DAFTAR PEMESANAN</a> </li>
+			<li><a href="/statistic">STATISTIK</a> </li>
+			<li><a href="/admin">ADMIN</a> </li>
+			<li><a href="/traffic-feed">Traffic Feed</a> </li>
 		</ul>
 	</div>
 </nav>

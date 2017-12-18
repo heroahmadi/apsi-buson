@@ -53,12 +53,12 @@
                             <h2>Bukti Pembayaran: </h2>
                             <img src="" id="buktiBayarImg" width="100%">
                         </div>
+                        <form action="/admin/confirm" method="post" id="confirmForm">
+                            {{ csrf_field() }}
+                            <input type="hidden" name="id_to_confirm" value="" id="id_to_confirm">
+                        </form>
                     </div>
 
-                    <form action="/admin/confirm" method="post" id="confirmForm">
-                        {{ csrf_field() }}
-                        <input type="hidden" name="id_to_confirm" value="" id="id_to_confirm">
-                    </form>
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">BATAL</button>

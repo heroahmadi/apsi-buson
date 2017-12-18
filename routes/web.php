@@ -25,6 +25,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/mytrip', 'DetailPemesananController@index');
 Route::post('/mytrip/get_detail', 'DetailPemesananController@getPesanan');
 
+Route::get('/traffic-feed', 'TrafficFeedController@index');
+Route::post('/traffic-feed/post', 'TrafficFeedController@post');
+
 Route::get('/datapenumpang',function(){
 	return view('pages.datapenumpang');
 });
