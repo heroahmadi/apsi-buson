@@ -8,8 +8,8 @@
         	<h1 class="text-center"><span class="bdots">&bullet;</span><span class="carstxt">ADMIN</span>&bullet;</h1>
     	</div>
 
-    	<div class="col-md-8 col-md-offset-2">
-    		<table class="table table-bordered">
+    	<div class="row">
+            <div class="col-md-10 col-md-offset-2">
     			<thead>
     				<tr>
     					<td>ID Booking</td>
