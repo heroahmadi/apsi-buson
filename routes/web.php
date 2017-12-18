@@ -19,5 +19,6 @@ Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('/admin', 'AdminController@index');
 Route::get('/payment/{id}', 'PemesananController@metodeBayar');
+Route::post('/upload-bukti-bayar', 'PemesananController@pay');
 
 Route::get('/home', 'HomeController@index')->name('home');

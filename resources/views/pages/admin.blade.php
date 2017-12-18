@@ -9,7 +9,7 @@
     	</div>
 
     	<div class="row">
-            <div class="col-md-10 col-md-offset-2">
+            <div class="col-md-10 col-md-offset-1 col-md-offset-right-1">
     			<thead>
     				<tr>
     					<td>ID Booking</td>

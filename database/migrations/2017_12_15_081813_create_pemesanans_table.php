@@ -21,6 +21,7 @@ class CreatePemesanansTable extends Migration
             $table->integer('status_pemesanan');
             $table->string('nama_penumpang');
             $table->string('no_ktp_penumpang');
+            $table->string('bukti_bayar');
             $table->timestamps();
         });
     }
