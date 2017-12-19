@@ -9,8 +9,8 @@
 				<div class="item active">
 					<img src="/image/terminal-bus.jpg" alt="oldcar" width="100%">
 					<div class="carousel-caption">
-						<h2>Buson.com</h2>
-						<p>Kini tak perlu takut ketinggalan bus,<br>
+						<h2 style="color: yellow">Buson.com</h2>
+						<p style="color: yellow">Kini tak perlu takut ketinggalan bus,<br>
 							Dapatkan tiket hanya dengan tiduran di rumah </p>
 					</div>
 				</div>

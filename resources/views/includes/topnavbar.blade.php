@@ -41,7 +41,9 @@
 			<li><a href="/pesan">PESAN TIKET</a> </li>
 			<li><a href="/mytrip">DAFTAR PEMESANAN</a> </li>
 			<li><a href="/statistic">STATISTIK</a> </li>
-			<li><a href="/admin">ADMIN</a> </li>
+			@if (auth()->user() && auth()->user()->name == 'admin')
+				<li><a href="/admin">ADMIN</a> </li>
+			@endif
 			<li><a href="/traffic-feed">TRAFFIC FEED</a> </li>
 		</ul>
 	</div>
